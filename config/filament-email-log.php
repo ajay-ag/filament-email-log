@@ -14,6 +14,4 @@ return [
      */
     'keep_email_for_days' => 90,
 
-    ""
-
 ];
