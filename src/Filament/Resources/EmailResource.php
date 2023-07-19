@@ -33,6 +33,11 @@ class EmailResource extends Resource
         return Config::get('filament-email-log.resource.sort') ?? parent::getNavigationSort();
     }
 
+    protected static function shouldRegisterNavigation(): bool
+    {
+        return    return Config::get('filament-email-log.resource.should-register-navigation') ?? parent::getNavigationSort();
+    }
+
     public static function form(Form $form): Form
     {
         return $form
